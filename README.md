@@ -5,6 +5,6 @@
 ## Features
 * Bootstrap
 * JQuery
-* JQueryUI
+* Moment.js
 * Google fonts
 * Font awesome

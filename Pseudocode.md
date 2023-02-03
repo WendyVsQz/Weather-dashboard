@@ -22,9 +22,9 @@
 
 ## HTML
 
-I want to create the structure required of the page 
+I want to create the structure required of the webpage 
 
-1. Link additional features
+1. Link additional features (bootstrap, jQuery, google fonts, font awesome and moment.js)
 2. ### Div tags
 * 2.1- Search for city: form, button
 * 2.3- Today's weather info: tittle and text.
@@ -32,16 +32,17 @@ I want to create the structure required of the page
 
 ## JS
 
-I want to function all the mentioned tags to run the form, button, local storage and API weather.
+I want to function all the mentioned tags to run the form, button, local storage, format date and API weather.
 
 1. Input box 
 2. Onclick btn
 3. Local Storage
-4. AJAX 
-5. Append variables
+4. moment.js
+5. AJAX 
+6. Append variables
 
 ## CSS
-I want to style the header tittle and color, positioning all the button, input, titte, subtittle, p tags and cards put together.
+I want to style the header tittle and color, positioning; all the button, input, tittle, subtittle, p tags and cards put together.
 
 1. Hero
 2. Font family
@@ -51,7 +52,7 @@ I want to style the header tittle and color, positioning all the button, input, 
 ## README.md
 I want to include in my readme file:
 * The description
-* Features I used
+* Features I use
 * Helpful resources I find
 * The img of the final result
-* And finally the deploy
+* And finally the deploy link

@@ -18,23 +18,40 @@
     * The humidity
     * When a user click on a city in the search history they are again presented with current and future conditions for that city
 
-## Step-by-step process
+# Step-by-step proccess
 
-# HTML
+## HTML
 
-1. 
-2. 
-3. 
+I want to create the structure required of the page 
 
+1. Link additional features
+2. ### Div tags
+* 2.1- Search for city: form, button
+* 2.3- Today's weather info: tittle and text.
+* 2.4- 5-Day forecast: subtittle and bootstrap cards.
 
-# JS
+## JS
 
-1. 
-2. 
-3. 
+I want to function all the mentioned tags to run the form, button, local storage and API weather.
 
-# CSS
+1. Input box 
+2. Onclick btn
+3. Local Storage
+4. AJAX 
+5. Append variables
 
-1. 
-2. 
-3. 
+## CSS
+I want to style the header tittle and color, positioning all the button, input, titte, subtittle, p tags and cards put together.
+
+1. Hero
+2. Font family
+3. Body positioning
+4. Color
+
+## README.md
+I want to include in my readme file:
+* The description
+* Features I used
+* Helpful resources I find
+* The img of the final result
+* And finally the deploy

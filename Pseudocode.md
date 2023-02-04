@@ -27,8 +27,8 @@ I want to create the structure required of the webpage
 1. Link additional features (bootstrap, jQuery, google fonts, font awesome and moment.js)
 2. ### Div tags
 * 2.1- Search for city: form, button
-* 2.3- Today's weather info: tittle and text.
-* 2.4- 5-Day forecast: subtittle and bootstrap cards.
+* 2.2- Today's weather info: tittle and text.
+* 2.3- 5-Day forecast: subtittle and bootstrap cards.
 
 ## JS
 

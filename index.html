@@ -31,27 +31,94 @@
         <h2 id="form-heading" class="mt-1 h3 form-label">
           Search for a City:
         </h2>
-        <form id="search-form" class="form">
-          <div class="form-inline form-group">
-            <div class="input-group">
-              <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
-                aria-labelledby="form-heading" aria-controls="today forecast" />
-              <div class="input-group-append">
-                <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
-                  Search
-                </button>
+          <form id="search-form" class="form">
+            <div class="form-inline form-group">
+              <div class="input-group">
+                <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
+                  aria-labelledby="form-heading" aria-controls="today forecast" /> <!--Input action call-->
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-primary btn-lg btn-block">search</button>
+                  </button>
                 <hr class="hr weather-hr" />
               </div>
             </div>
           </div>
+          <!--local storage history-->
         </form>
-        <div class="list-group" id="history"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-3">Berlin</div>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-3">Paris</div>
+          </div>
+          <div class="row">
+            <div class="col-6 col-sm-3">Madrid</div>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+        
+            <div class="col-6 col-sm-3">Bolivia</div>
+          </div>
+        </div>
       </aside>
-
+      <!--Today's weather-->
       <div class="col-lg-9 pb-3">
         <section id="today" class="mt-3" role="region" aria-live="polite"></section>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h1>Bristol</h1>
+            <h5 class="card-title">04/02/2023</h5>
+            <p class="card-text">Temp</p>
+            <p class="card-text">Wind</p>
+            <p class="card-text">humidity</p>
+            </div>
+          </div>
+          <!--5-day forecast weather-->
         <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
+        <h2>5-Day forecast:</h2>
+        <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">05/02/2023</h5>
+          <p class="card-text">Temp</p>
+          <p class="card-text">Wind</p>
+          <p class="card-text">humidity</p>
+          </div>
+        </div>
+          <div>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">06/02/2023</h5>
+            <p class="card-text">Temp</p>
+            <p class="card-text">Wind</p>
+            <p class="card-text">humidity</p>
+          </div>
+        </div>
+          <div>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">07/02/2023</h5>
+          <p class="card-text">Temp</p>
+          <p class="card-text">Wind</p>
+          <p class="card-text">humidity</p>
+        </div>
       </div>
+        <div>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">08/02/2023</h5>
+        <p class="card-text">Temp</p>
+        <p class="card-text">Wind</p>
+        <p class="card-text">humidity</p>
+      </div>
+    </div>
+      <div>
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">09/02/2023</h5>
+      <p class="card-text">Temp</p>
+      <p class="card-text">Wind</p>
+      <p class="card-text">humidity</p>
     </div>
   </div>
 

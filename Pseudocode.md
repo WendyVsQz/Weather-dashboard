@@ -34,12 +34,9 @@ I want to create the structure required of the webpage
 
 I want to function all the mentioned tags to run the form, button, local storage, format date and API weather.
 
-1. Input box 
-2. Onclick btn
-3. Local Storage
-4. moment.js
-5. AJAX 
-6. Append variables
+1. Local Storage
+2. moment.js
+3. API
 
 ## CSS
 I want to style the header tittle and color, positioning; all the button, input, tittle, subtittle, p tags and cards put together.

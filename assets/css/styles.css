@@ -12,19 +12,29 @@ License: none (public domain)
 }
 
 body {
-    background: url(./images/pexels-lumn-167699.jpg) no-repeat;
-    background-size: cover;
-    height: 100vh
+    background: url(../images/rain-2538429_1280.jpg);
     font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     
 }
 
-h1{
-	font-family: roboto condensed;
-	font-weight: bold;
+h1,strong{
+    font-family: roboto condensed;
+    font-weight: bolder;
+}
+
+h2,strong{
+    font-family: roboto condensed;
+    font-weight: bolder;
+    color: azure;
 
 }
+
+b, strong {
+    font-weight: bolder;
+    color: wheat;
+}
+
 
 .forecast{
     

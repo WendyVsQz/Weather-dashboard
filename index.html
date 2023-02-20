@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!--Css-->
   <link rel="stylesheet" href="styles/reset.css" />
-  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <!--Google fonts-->
@@ -20,13 +20,13 @@
 </head>
 
     <!--Jumbotron for Title-->
-    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#2a4955 ;color: white;">
+    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:#2a3d55 ;color: white;">
       <h1> <strong>Weather Dashboard</strong></h1>
   </div>
   <div class="container">
       <!--Row for searching a city-->
       <div class="row">
-          <div class="col-sm-4 bg-light">
+          <div class="col-sm-4" style= "background-color: #29456199;position: absolute;padding-right: 27px;margin-right: -5px;right: 518px;">
               <!--Here we create an HTML form for handling the inputs-->
               <h4 class="pt-1"><strong>Search for a City:</strong></h4>
               <!--Here we create the text box for capturing the search city Name-->
@@ -53,9 +53,11 @@
                 
         <!--   local storage history-->
       <!--Today's weather -->
-      <div class="col-lg-9 pb-3">
+      <div class="container"></div>
+      <div class="row">
+      <div class="col-lg-9 pb-3"  style="background-color: #29456199;">
         <section id="today" class="mt-3" role="region" aria-live="polite"></section>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 30rem;">
           <div class="card-body">
             <h1>Bristol</h1>
             <h5 id="current" class="answer"></h5>
@@ -65,6 +67,9 @@
               </div>
           </div>
           <!--5-day forecast weather-->
+          <div class="container"></div>
+          <div class="row">
+          <div class="col-lg-9 pb-3"  style="background-color: #29456199;">
         <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
         <h2>5-Day forecast:</h2>
         <div class="card" style="width: 18rem;">
@@ -111,13 +116,15 @@
             <p class="humidity">humidity</p>
           </div>
         </div>
+      </div>
+        </div>
 
   <!-- Moment.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--Script.js-->
-  <script src="./assets/script.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

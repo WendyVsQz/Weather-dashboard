@@ -34,25 +34,91 @@ for (var i = 0; i < timeDisplayEl.length; i++){
 // Here we display the 5 days forecast for the current city.
 //Set up the API key
 
-const API_key = "a43fc3b983181afb01b8329075754564";
-const XAPI_key = "my2A5016/7tnJweXGniFFQ==7GYdL2sFvnqWdvgf"
 
-regionData()
+/* regionData()
 function regionData() {
-navigator.geolocation.regionData((success) => {
-  console.log(success);
-    })
-}
-var city = ""
+  navigator.geolocation.regionData((success) => {
+    console.log(success);
+  })
+} */
+
+const API_key = "97f51d5e48b2c8cbef33200ea2f10ece";
+function getCityCoor(){
+var city = "London"
 $.ajax({
     method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/geocoding?city=' + city,
-    headers: { 'XAPI-Key': 'API_Key'},
-    contentType: 'application/json',
+    url: 'http:api.openweathermap.org/geo/1.0/direct?q='+city+ '&appid='+ API_key,
+    //contentType: 'application/json',
     success: function(result) {
-        console.log(result);
+        getWeather(result[0].lat,result[0].lon )
     },
-    error: function ajaxError(jqXHR) {
+    error: function(jqXHR) {
         console.error('Error: ', jqXHR.responseText);
     }
 });
+//fetch('http://api.openweathermap.org/geo/1.0/direct?q='+city+ '&limit=5&appid='+ API_key,)
+//.then(response=> {
+  //console.log(response)
+//})
+}
+
+function getWeather(lat, lon){
+  $.ajax({
+    method: 'GET',
+    url: 'https://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&appid=97f51d5e48b2c8cbef33200ea2f10ece',
+    success: function(result) {
+      displayWeather(result)
+  },
+  error: function(jqXHR) {
+      console.error('Error: ', jqXHR.responseText);
+  }
+
+  })
+}
+
+/* obj("lisa= 9", "bart=10", "Homer=50")
+"obj.lisa"
+
+Arr["lisa", "bart", "Homer"]
+Arr[0]; */
+
+function displayWeather(data){
+  console.log(data)
+  console.log(data.name)
+  console.log(data.main.temp)
+  console.log(data.wind)
+  console.log(data.main.humidity)
+  console.log(data.sys)
+  document.querySelector(".temp").textContent = "Temp: "+data.main.temp
+  document.querySelector(".wind").textContent="Wind: "+data.wind.deg
+  document.querySelector(".humidity").textContent="Humidity: "+ data.main.humidity
+
+
+  //id="awesome"
+  //document.querySelector("#awesome")
+  //document.getElementById("awesome")
+}
+
+function getWeather(lat, lon){
+  $.ajax({
+    method: 'GET',
+    url: 'https://pro.openweathermap.org/data/2.5/forecast/hourly?lat='+lat+'&lon='+lon+'&appid=97f51d5e48b2c8cbef33200ea2f10ece',
+    success: function(result) {
+      displayWeather(result)
+  },
+  error: function(jqXHR) {
+      console.error('Error: ', jqXHR.responseText);
+  }
+
+  //'https://pro.openweathermap.org/data/2.5/forecast/hourly?lat='+lat+'&lon='+lon+'&appid=97f51d5e48b2c8cbef33200ea2f10ece
+  })
+}
+
+function displayForecast(data){
+
+}
+
+getCityCoor()
+
+localStorage.setItem('TEST', "Hello")
+localStorage.getItem("TEST")

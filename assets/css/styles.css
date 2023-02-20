@@ -35,6 +35,11 @@ b, strong {
     color: wheat;
 }
 
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
 
 .forecast{
     

@@ -41,10 +41,9 @@ for (var i = 0; i < timeDisplayEl.length; i++){
 // 3. API
 
 // 3.1. get the geolocation
-
-const API_key = "97f51d5e48b2c8cbef33200ea2f10ece";
+var API_key = "97f51d5e48b2c8cbef33200ea2f10ece";
 function getCityCoor(){
-var city = "London"
+  var city = "London";
 $.ajax({
     method: 'GET',
     url: 'http:api.openweathermap.org/geo/1.0/direct?q='+city+ '&appid='+ API_key,
@@ -58,6 +57,7 @@ $.ajax({
 }
 
 // 3.2. display current weather
+
 function getWeather(lat, lon){
   $.ajax({
     method: 'GET',
@@ -68,39 +68,38 @@ function getWeather(lat, lon){
   error: function(jqXHR) {
       console.error('Error: ', jqXHR.responseText);
   }
-
-  })
 }
+  )}
 
+  
 function displayWeather(data){
   console.log(data)
   console.log(data.name)
   console.log(data.main.temp)
   console.log(data.wind)
-  console.log(data.main.humidity)
-  console.log(data.sys)  
-  document.querySelector("#temp").textContent = "Temp: "+data.main.temp
-  document.querySelector("#wind").textContent="Wind: "+data.wind.deg
-  document.querySelector("#humidity").textContent="Humidity: "+ data.main.humidity
+  console.log(data.main.humidity) 
+  document.querySelector("#city").textContent = data.name
+  document.querySelector("#temp").textContent = "Temp: "+ data.main.temp
+  document.querySelector("#wind").textContent= "Wind: "+ data.wind.deg
+  document.querySelector("#humidity").textContent= "Humidity: "+ data.main.humidity 
 }
-
-// 3.3.  display 5 days forecast
 /* 
-function getWeather(lat, lon){
+// 3.3.  display 5 days forecast
+function getForecast(lat, lon){
   $.ajax({
     method: 'GET',
-    url: 'https://api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid='+ API_key,
-    success: function(result) {
-      displayWeather(result)
-  },
-  error: function(jqXHR) {
+    url:'api.openweathermap.org/data/2.5/forecast?lat='+lat+'&lon='+lon+'&appid='+ API_key,
+    success: function(result){
+      displayForecast(result)
+    },
+    error: function(jqXHR) {
       console.error('Error: ', jqXHR.responseText);
-  }
+    }
   })
 }
-
 function displayForecast(data){
+  console.log(data)
+} */
 
-}
+getCityCoor() 
 
-getCityCoor() */

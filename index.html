@@ -26,7 +26,7 @@
   <div class="container">
       <!--Row for searching a city-->
       <div class="row">
-          <div class="col-sm-4" style= "background-color: #29456199;position: absolute;padding-right: 27px;margin-right: -5px;right: 518px;">
+          <div class="col-sm-4" style= "background-color: #29456199;position: absolute;padding-right: 27px;margin-right: -5px;right: 518px;height: 137px;">
               <!--Here we create an HTML form for handling the inputs-->
               <h4 class="pt-1"><strong>Search for a City:</strong></h4>
               <!--Here we create the text box for capturing the search city Name-->
@@ -55,65 +55,64 @@
       <!--Today's weather -->
       <div class="container"></div>
       <div class="row">
-      <div class="col-lg-9 pb-3"  style="background-color: #29456199;">
         <section id="today" class="mt-3" role="region" aria-live="polite"></section>
         <div class="card" style="width: 30rem;">
           <div class="card-body">
-            <h1>Bristol</h1>
+            <h1 id="city"></h1>
             <h5 id="current" class="answer"></h5>
-                <p class="temp">Temp</p>
-                <p class="wind">Wind</p>
-                <p class="humidity">humidity</p>
+                <p id="temp"></p>
+                <p id="wind"></p>
+                <p id="humidity"></p>
               </div>
           </div>
           <!--5-day forecast weather-->
           <div class="container"></div>
           <div class="row">
-          <div class="col-lg-9 pb-3"  style="background-color: #29456199;">
+        <div class="col-lg-9 pb-3"  style="background-color: #29456199;width: 1945px;padding: -10px;margin-left: -324px;height: 542px;">
         <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
         <h2>5-Day forecast:</h2>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 27rem;height: 250px;">
         <div class="card-body">
           <h5 id="tomorrow" class="answer"></h5>
-          <p class="temp"></p>
-          <p class="wind">Wind</p>
-          <p class="humidity">humidity</p>
+          <p id="temp"></p>
+          <p id="wind">Wind</p>
+          <p id="humidity">humidity</p>
           </div>
         </div>
           <div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 27rem;height: 250px;">
           <div class="card-body">
             <h5 id="next" class="answer"></h5>
-            <p class="temp">Temp</p>
-            <p class="wind">Wind</p>
-            <p class="humidity">humidity</p>
+            <p id="temp">Temp</p>
+            <p id="wind">Wind</p>
+            <p id="humidity">humidity</p>
           </div>
         </div>
           <div>
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 27rem;height: 250px;">
         <div class="card-body">
           <h5 id="third" class="answer"></h5>
-          <p class="temp">Temp</p>
-          <p class="wind">Wind</p>
-          <p class="humidity">humidity</p>
+          <p id="temp">Temp</p>
+          <p id="wind">Wind</p>
+          <p id="humidity">humidity</p>
         </div>
       </div>
         <div>
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 27rem;height: 250px;">
       <div class="card-body">
         <h5 id="forth" class="answer"></h5>
-        <p class="temp">Temp</p>
-        <p class="wind">Wind</p>
-        <p class="humidity">humidity</p>
+        <p id="temp">Temp</p>
+        <p id="wind">Wind</p>
+        <p id="humidity">humidity</p>
       </div>
     </div>
       <div>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 27rem;height: 250px;">
           <div class="card-body">
             <h5 id="forth" class="answer"></h5>
-            <p class="temp">Temp</p>
-            <p class="wind">Wind</p>
-            <p class="humidity">humidity</p>
+            <p id="temp">Temp</p>
+            <p id="wind">Wind</p>
+            <p id="humidity">humidity</p>
           </div>
         </div>
       </div>

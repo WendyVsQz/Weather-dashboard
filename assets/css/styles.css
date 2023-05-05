@@ -1,48 +1,42 @@
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0 | 20110126
-License: none (public domain)
----------------------------------*/
-/* roboto condensed family font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
-
-*{
-    box-sizing: border-box;
-    
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Roboto Condensed;
+    background-color: #222;
+    background-image: url("https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce40ce8b8ba365e5e6d06401e5485390");
+}
+.card{
+    background-color: rgba(238, 170, 238, 0.256);
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1rem;
 }
 
-body {
-    background: url(../images/rain-2538429_1280.jpg);
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
-    
-}
-
-h1,strong{
-    font-family: roboto condensed;
-    font-weight: bolder;
-}
-
-h2,strong{
-    font-family: roboto condensed;
-    font-weight: bolder;
-    color: azure;
-
-}
-
-b, strong {
-    font-weight: bolder;
-    color: wheat;
-}
-
-/* .container {
+.search{
     display: flex;
     align-items: center;
     justify-content: center;
-} */
-
-.forecast{
-    
-    font-size: 0.9em;
+}
+.search-bar{
+    border: none;
+    outline: none;
 }
 
+.search button{
+    margin: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+
+}
+
+.forecast{
+    margin-left: 114px;
+}

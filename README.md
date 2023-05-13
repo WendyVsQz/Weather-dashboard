@@ -15,5 +15,5 @@ This weather dashboard allows users to search for a city to get the current weat
 
 ## Deploy
 
-- 
+- https://wendyvsqz.github.io/Weather-dashboard/
 

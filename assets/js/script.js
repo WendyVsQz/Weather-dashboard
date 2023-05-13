@@ -1,7 +1,14 @@
-//TAGS: #Today, #Tomorrow, yesterday,
+//TAGS: #Today
 //#card, #search, #search-bar, #forecast,
 //#weather, #city, #temp, #icon, #description, #humidity, #wind.
 //---------------------------------------------------------------//
+// Current date
+var timeDisplayEl = document.querySelectorAll(['#today']);
+for (var i = 0; i < timeDisplayEl.length; i++){
+    setInterval(function() {
+    timeDisplayEl[0].textContent = moment().format("DD/MM/YYYY")
+    },1000);
+};
 //API Key: 747b155a3ad134502ce1104de711994f
 
 let weather= {

@@ -30,11 +30,12 @@ let weather= {
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText = "humidity: " + humidity + "%";
     document.querySelector(".wind").innerText = "wind speed: " + speed + "km/h";
-    },
-    //05. function searchbar
-    search: function(){
+    document.querySelector(".weather").classList.remove("loading");
+},
+//05. function searchbar
+search: function(){
     this.fetchWeather(document.querySelector(".search-bar").value);
-    }
+}
 };
 //06. event listener
 document.querySelector(".search button")
@@ -48,3 +49,4 @@ document.querySelector(".search-bar")
         weather.search();
     }
 })
+
